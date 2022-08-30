@@ -22,6 +22,31 @@
     {
       padding: 3rem 1.25rem;
     }
+    .nested-menu
+    {
+        left: 0% ;
+    }
+    nav button
+    {
+      border: none!important;
+    }
+    nav button:focus,nav button:active
+    {
+      border: none!important;
+      box-shadow: none!important;
+    }
+    .navbar-collapse
+    {
+      background-color: #fff;
+    }
+    .nav-link
+    {
+      color: #4e4e4e!important;
+    }
+    .nav-link:hover
+    {
+      color: var(--primary-color);
+    }
 }
 
 @media (min-width: 768px) {
@@ -30,14 +55,30 @@
     }
   }
   
-  @media (min-width: 992px) {
+  @media (min-width: 992px) 
+  {
     .testimonial-box p {
       padding: 0 8rem;
+    }
+    .nested-menu
+    {
+        left: -100% ;
     }
   }
   
   @media (min-width: 1200px) {
     .testimonial-box p {
       padding: 0 13rem;
+    }
+    .nested-menu
+    {
+      left: -100% ;
+    }
+  }
+  @media (min-width: 1360px) {
+
+    .nested-menu
+    {
+        left: 99% ;
     }
   }
