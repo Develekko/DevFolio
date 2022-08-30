@@ -1,0 +1,43 @@
+@media (max-width: 768px) 
+{
+    #home .caption h1 
+    {
+      font-size: 48px;
+      line-height: 57.6px;
+    }
+    #home .caption p 
+    {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .about-box 
+    {
+      padding: 4rem 1.25rem;
+    }
+    .testimonial-box p
+    {
+      padding: 0 0rem;
+    }
+    .contact-box
+    {
+      padding: 3rem 1.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .testimonial-box p{
+      padding: 0 5rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .testimonial-box p {
+      padding: 0 8rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .testimonial-box p {
+      padding: 0 13rem;
+    }
+  }

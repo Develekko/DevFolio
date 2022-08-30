@@ -1,0 +1,619 @@
+/* ======================== General Css ========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+ul,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --primary-color: #0078FF;
+    --body-bg:#F5F5F5;
+}
+
+::selection {
+    background: var(--primary-color);
+    color: #fff;
+    text-shadow: none;
+}
+.section-heading {
+    margin-bottom: 4rem;
+}
+
+.section-heading h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(30, 30, 30);
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: rgb(78, 78, 78);
+    margin-bottom: 1rem;
+}
+
+.section-line {
+    width: 40px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+/* ======================== Navbar ========================*/
+nav
+{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px 0!important;
+    transition: all 0.5s;
+}
+nav ul .nav-item
+{
+    padding: 10px 0 10px 30px;
+}
+.nav-link
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0!important;
+    white-space: nowrap;
+    transition: 0.3s;
+    text-transform: uppercase;
+    position: relative;
+}
+.nav-link::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    width:0%;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+.nav-link:hover:before
+{
+    width: 80%;
+    visibility: visible;
+}
+.nav-link:hover
+{
+    color: #fff;
+}
+.nav-box h1 a
+{
+    font-size: 28px;
+    font-weight: 600;
+    Line-height: 33.6px;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+/* ======================== Home Section ========================*/
+#home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url(../images/bg/hero-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#home .caption h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 86.4px;
+}
+
+#home .caption p {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+/* ======================== About Section ========================*/
+#about {
+    background-color: var(--body-bg);
+    padding-top: 4rem;
+}
+
+.about-box {
+    padding: 4rem 3rem;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.about-img {
+    margin-bottom: 2rem;
+}
+
+.about-img img {
+    margin-left: 0.625rem;
+}
+
+.about-caption p {
+    margin-bottom: 1rem;
+    font-size: 17.6px;
+    font-weight: 600;
+    line-height: 26.4px;
+    color: rgb(30, 30, 30);
+}
+
+.about-caption p span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(78, 78, 78);
+}
+
+.about-skills p {
+    font-size: 17.6px;
+    font-weight: 600;
+    line-height: 26.4px;
+    color: rgb(30, 30, 30);
+}
+
+.about-skills .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+}
+
+.skills-caption {
+    color: rgb(78, 78, 78);
+}
+
+.about-heading {
+    margin-bottom: 3rem;
+}
+
+.about-heading h5 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: rgb(30, 30, 30);
+    position: relative;
+}
+
+.about-heading h5::before ,.form-heading h5::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--primary-color);
+    width: 100px;
+    bottom: -12px;
+}
+
+.about-info p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgb(78, 78, 78);
+}
+
+/* ======================== Services ========================*/
+#services {
+    padding-top: calc(48rem/16);
+    background-color: var(--body-bg);
+    box-shadow: 0 13px 8px -10px rgb(255, 0, 0);
+}
+.service-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.service-box:hover .service-icon
+{
+    outline: 10px solid #cde1f8;
+    background-color: var(--primary-color);
+}
+.service-icon i
+{
+    font-size: 40px;
+}
+.service-box:hover .service-icon i
+{
+    color: #fff;
+}
+.service-icon
+{
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    color: #1e1e1e;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    outline: 10px solid var(--primary-color);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+} 
+.service-content h2
+{
+    font-size: 22.4px;
+    font-weight: 500;
+    line-height: 26.88px;
+    padding: 0.4rem 0;
+    margin-bottom: 0.5rem;
+}
+.service-content p
+{
+    margin-bottom: 1rem;
+    color: rgb(78, 78, 78);
+
+}
+/* ======================== Counter ========================*/
+#counter
+{
+    background: linear-gradient(rgba(0, 120, 255,0.7), rgba(0, 120, 255,0.7)), url(../images/bg/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8rem;
+}
+.counter-box h4
+{
+    font-size: 32px;
+    line-height: 48px;
+}
+.counter-icon
+{
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.5;
+    color: #cde1f8;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    outline: 10px solid #cde1f8;
+}
+/* ======================== Portfolio ========================*/
+#portfolio
+{
+    background-color: var(--body-bg);
+    padding-top: 4rem;
+}
+.modal-open {
+    overflow:hidden;
+    overflow-y:scroll;
+    padding-right:0 !important;
+}
+.portfolio-box
+{
+    margin-bottom: 3rem;
+    background-color: #fff;
+}
+.work-img
+{
+    overflow: hidden;
+    cursor: pointer;
+}
+.work-img img
+{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.portfolio-box:hover .work-img img
+{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+.portfolio-content
+{
+    padding: 2rem 3% 1rem 4%;
+    color: #1e1e1e;
+}
+.portfolio-content h2
+{
+    font-size: 19.2px;
+    font-weight: 500;
+    line-height: 23.04px;
+    margin-bottom: 0.5rem;
+}
+.portfolio-content p 
+{
+    color: rgb(78, 78, 78);
+    font-size: 12.8px;
+    line-height: 19.2px;
+}
+.portfolio-content p span
+{
+    color: var(--primary-color);
+}
+.portfolio-content a
+{
+    font-size:40px ;
+    line-height: 60px;
+    color: var(--primary-color);
+}
+/* ======================== testimonial ========================*/
+#testimonial
+{
+    background: linear-gradient(rgba(0, 120, 255,0.7), rgba(0, 120, 255,0.7)), url(../images/bg/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    padding: 8rem 0;
+}
+.testimonial-box img
+{
+    margin-top: 1rem;
+}
+.testimonial-box span
+{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    Line-height: 33.6px;
+}
+.testimonial-box p
+{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 300;
+    Line-height: 30px;
+    padding: 0 13rem;
+}
+.carousel-indicators
+{
+    position: static!important;
+}
+.carousel-indicators button
+{
+    width: 12px!important;
+    height: 12px!important; 
+}
+/* ======================== Blog ========================*/
+#blog
+{
+    background-color: var(--body-bg);
+    padding-top: 4rem;
+}
+.blog-card
+{
+    margin-bottom: 48px;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.card-body::after
+{
+    content: "web design";
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    height: 30px;
+    color:#fff;
+    padding: 7px 15px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.card-footer-box
+{
+    color: rgb(78, 78, 78);
+}
+.card-footer-box a
+{
+    color: #1E1E1E;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.card-footer-box a:hover
+{
+    color: var(--primary-color);
+}
+.card-footer-box img
+{
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+/* ======================== contact ========================*/
+#contact
+{
+    background: linear-gradient(rgba(0, 120, 255,0.7), rgba(0, 120, 255,0.7)), url(../images/bg/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    padding-top: 4rem;
+    position: relative;
+}
+.fdfd
+{
+    height: 200px;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.contact-box
+{
+    background-color: #fff;
+    margin: 4rem 0 3rem 0;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    padding: 3rem;
+}
+.form-heading h5
+{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: rgb(30, 30, 30);
+}
+.form-btn
+{
+    background: var(--primary-color);
+    border: 0;
+    font-size: 1.2rem;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+}
+.form-btn:hover
+{
+    background: #3393ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+.contact-info p
+{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgb(78, 78, 78);
+}
+.contact-info h6
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(78, 78, 78);
+}
+.contact-info h6 i
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color:var(--primary-color);
+    margin-right: 0.5rem;
+}
+.contact-social
+{
+    padding: 1.5rem 0;
+}
+.contact-social ul
+{
+    padding-left: 0!important;
+}
+.contact-social li
+{
+    padding: 0 1rem;
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 1.6;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px var(--primary-color);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.contact-social li:hover
+{
+    background-color: var(--primary-color);
+    box-shadow: 0 0 0 3px #cde1f8;
+}
+.contact-social li i
+{
+    color: rgb(30,30,30);
+}
+.contact-social li:hover i
+{
+    color: #fff;
+}
+.contact-social li a 
+{
+    font-size: 20px;
+    line-height: 30.72px;
+}
+/* ======================== Footer ========================*/
+footer
+{
+    background-color:#0062D3;
+    padding: 25px;
+}
+.copyright p
+{
+    margin-bottom: 0.3rem;
+}
+.created-by p
+{
+    margin-bottom: 0;
+}
+.created-by a
+{
+    color: #fff;
+}
+
+
+
+
+
+
+/* ======================== back-to-top ========================*/
+#back-to-top {
+    position: fixed;
+    background-color: var(--primary-color);
+    height: 40px;
+    width: 40px;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+#back-to-top i
+{
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+#back-to-top a {
+    color: #fff;
+}
+
+#back-to-top:hover {
+    background-color: #298eff;
+}
