@@ -88,7 +88,7 @@ nav ul .nav-item
     visibility: hidden;
     transition: all 0.3s ease-in-out 0s;
 }
-.nav-link:hover:before
+.nav-link:hover:before , .active:before
 {
     width: 80%;
     visibility: visible;
