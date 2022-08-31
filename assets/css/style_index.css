@@ -215,7 +215,8 @@ nav ul .nav-item
 /* ======================== About Section ========================*/
 #about {
     background-color: var(--body-bg);
-    padding-top: 4rem;
+    padding: 4rem 0 3rem 0;
+    position:relative;
 }
 
 .about-box {
