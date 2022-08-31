@@ -7,6 +7,7 @@ new Typed('#typed',{
   });
 /*------------------------------------
     Counter
+    
 -------------------------------------- */
 "use strict"
 
@@ -117,3 +118,25 @@ navLinks.forEach((link) => {
     });
   });
 });
+
+  /*------------------------------------
+    Back to top button
+-------------------------------------- */
+ const toTop = document.querySelector("#back-to-top");
+
+ window.addEventListener("scroll", () => {
+   if (window.pageYOffset > 100) {
+     toTop.classList.add("active");
+   } else {
+     toTop.classList.remove("active");
+   }
+ })
+
+
+  /*------------------------------------
+    pageloader
+-------------------------------------- */
+ var loader = document.getElementById("pageloader");
+ window.addEventListener("load",function(){
+  loader.style.display = "none";
+ })
