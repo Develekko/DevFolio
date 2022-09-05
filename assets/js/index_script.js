@@ -140,3 +140,4 @@ navLinks.forEach((link) => {
  window.addEventListener("load",function(){
   loader.style.display = "none";
  })
+
