@@ -57,7 +57,7 @@ a {
 nav
 {
     background: rgba(0, 0, 0, 0.9);
-    padding: 20px 0!important;
+    padding: 12px 0!important;
     transition: all 0.5s;
 }
 nav ul .nav-item
@@ -97,13 +97,20 @@ nav ul .nav-item
 {
     color: #fff;
 }
+.nav-box h1
+{
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 .nav-box h1 a
 {
     font-size: 28px;
     font-weight: 600;
-    Line-height: 33.6px;
     letter-spacing: 1px;
-    padding: 0;
+    padding:0;
 }
 .dropdown-menu  
 {
@@ -302,7 +309,7 @@ nav ul .nav-item
 #services {
     padding-top: calc(48rem/16);
     background-color: var(--body-bg);
-    box-shadow: 0 13px 8px -10px rgb(255, 0, 0);
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
 }
 .service-box {
     background-color: #fff;
@@ -705,6 +712,16 @@ footer
 }
 #back-to-top a {
     color: #fff;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 #back-to-top:hover {
