@@ -239,71 +239,191 @@ nav ul .nav-item
     float: unset;
     color: rgb(205, 225, 248);
 }
-#portoflio-details
+/* Blog */
+#main
 {
+    padding-top: 4rem;
     background-color: var(--body-bg);
 }
-.carousel-indicators button
+.blog-box
 {
-    background-color: #fff!important;
-    margin-top: 1rem;
-    border: 1px solid var(--primary-color)!important;
-    width: 10px!important;
-    height: 10px!important;
-    border-radius: 50%!important;
-    -webkit-border-radius: 50%!important;
-    -moz-border-radius: 50%!important;
-    -ms-border-radius: 50%!important;
-    -o-border-radius: 50%!important;
-}
-.carousel-indicators button.active
-{
-    background-color: var(--primary-color)!important;
-}
-.portfolio-info
-{
-    padding: 1.875rem;
-    background-color: #F5F5F5;
-    box-shadow: 0px 0 30px rgb(78 78 78 / 8%);
+    padding: 3rem;
 
 }
-.portfolio-info h3
+.blog-box ul
 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-left: 4px solid #0078ff;
+    margin-top: 1rem;
+    padding-left: 0!important;
 }
-.portfolio-info li
+.blog-box li
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 22.5px;
-    color: rgb(78, 78, 78);
-    margin-top: 10px;
+    margin-left: 15px;
 }
-.portfolio-info li span
+.blog-box h2
 {
-    font-weight: 400;
-}
-.portfolio-desc
-{
-    padding-top: 1.875rem;
-}
-.portfolio-desc h2
-{
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31.2px;
-    margin-bottom: 1.25rem;
+    margin-top: 1rem;
+    font-size: 30.4px;
+    font-weight: 500;
+    line-height: 36.48px;
     color: rgb(30, 30, 30);
 }
-.portfolio-desc p
+.blog-box p
 {
-    margin-bottom: 1rem;
+    color: rgb(78, 78, 78)
+}
+blockquote
+{
+    border-left: 4px solid #0078ff;
+    padding: 18px;
+    font-style: italic;
+}
+.blog-comments
+{
+    padding: 3rem;
+}
+.blog-comments h3
+{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: rgb(30, 30, 30);
+    position: relative;
+    margin-bottom: 3rem;
+}
+.blog-comments h3::after
+{
+    content:"";
+    position: absolute;
+    background-color: var(--primary-color);
+    left: 0;
+    height: 3px;
+    width: 100px;
+    bottom: -12px;
+}
+.comment-box img
+{
+    width: 80px;
+    height: 80px;
+}
+.comment-content 
+{
+    padding-left: 25px;
+    margin-bottom: 40px;
+}
+.comment-content h4
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(30, 30, 30)
+}
+.comment-content h5
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(30, 30, 30);
+    font-style: italic;
+}
+.comment-content p
+{
     color: rgb(78, 78, 78);
 }
+.comment-content a:hover
+{
+    color: var(--primary-color);
+}
+/* ================ Blog Form =============*/
+.blog-form
+{
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+.blog-form h3
+{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: rgb(30, 30, 30);
+    position: relative;
+    margin-bottom: 3rem;
+}
+.blog-form h3::after
+{
+    content:"";
+    position: absolute;
+    background-color: var(--primary-color);
+    left: 0;
+    height: 3px;
+    width: 100px;
+    bottom: -12px;
+}
+.blog-form form button
+{
+    padding: 0.9rem 2.3rem;
+    font-size: 1.2rem;
+}
+/* ================ Blog Part =============*/
+.blog-part
+{
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+.blog-part h5
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.blog-part form button
+{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.blog-part form button:hover
+{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+
+}
+.blog-part ul
+{
+   padding-left: 0;
+   margin-bottom: 0;
+}
+.blog-part ul li
+{
+    position: relative;
+    padding: 6px 0 6px 24px;
+}
+.blog-part ul li::before
+{
+    position: absolute;
+    content: "";
+    background-color: var(--primary-color);
+    width: 10px;
+    height: 1px;
+    left: 0;
+    top: 20px;
+}
+.blog-part ul li a
+{
+    color: #1e1e1e;
+}
+.blog-tags
+{
+    gap: 5px 0px;
+}
+
+
+
 
 
 

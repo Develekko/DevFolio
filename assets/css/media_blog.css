@@ -1,0 +1,131 @@
+@media (max-width: 768px) 
+  {
+      #hero 
+      {
+        background-attachment: scroll;
+      }
+      #hero h2
+      {
+        font-size: 48px;
+        line-height: 57.6px;
+      }
+      #home .caption p 
+      {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .dropdown-menu 
+      {
+        position: absolute!important;
+        left: 150px;
+      }
+      .nested-menu
+      {
+          left: 75% ;
+      }
+      nav button
+      {
+        border: none!important;
+      }
+      nav button:focus,nav button:active
+      {
+        border: none!important;
+        box-shadow: none!important;
+      }
+      .navbar-collapse
+      {
+        background-color: #fff;
+      }
+      .nav-link
+      {
+        color: #4e4e4e!important;
+      }
+      .nav-link:hover
+      {
+        color: var(--primary-color);
+      }
+      .blog-box
+      {
+          padding: 2rem;
+      }
+      .blog-comments
+      {
+          padding: 2rem;
+      }
+      .blog-form
+      {
+          padding: 2rem;
+      }
+      .blog-part
+      {
+        padding: 2rem;
+      }      
+      .blog-box h2
+      {
+          font-size: 24px;
+          line-height: 28.8px;
+      }
+  }
+
+@media (min-width: 768px) and (max-width:991px) 
+  {
+    #hero 
+    {
+      background-attachment: scroll;
+    }
+    .dropdown-menu 
+    {
+      position: absolute!important;
+      left: 150px;
+    }
+    .nested-menu
+    {
+        left: 75% ;
+    }
+    nav button
+    {
+      border: none!important;
+    }
+    nav button:focus,nav button:active
+    {
+      border: none!important;
+      box-shadow: none!important;
+    }
+    .navbar-collapse
+    {
+      background-color: #fff;
+    }
+    .nav-link
+    {
+      color: #4e4e4e!important;
+    }
+    .nav-link:hover
+    {
+      color: var(--primary-color);
+    }
+  }
+
+@media (min-width: 992px) 
+  {
+    .nested-menu
+    {
+        left: -100% ;
+    }
+  }
+
+@media (min-width: 1200px)
+  {
+    .nested-menu
+    {
+      left: -100% ;
+    }
+  }
+  
+@media (min-width: 1600px) 
+  {
+
+    .nested-menu
+    {
+        left: 99% ;
+    }
+  }
