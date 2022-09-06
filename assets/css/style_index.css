@@ -749,27 +749,16 @@ footer
   #pageloader:before {
     content: "";
     position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
     border: 6px solid #f2f2f2;
     border-top: 6px solid var(--primary-color);
     border-radius: 50%;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
     width: 60px;
     height: 60px;
-    -webkit-animation: animate-pageloader 1s linear infinite;
     animation: animate-pageloader 1s linear infinite;
+    -webkit-animation: animate-pageloader 1s linear infinite;
   }
-  
-  @-webkit-keyframes animate-pageloader {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
   @keyframes animate-pageloader {
     0% {
       transform: rotate(0deg);

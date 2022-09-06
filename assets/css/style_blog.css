@@ -416,6 +416,15 @@ blockquote
 .blog-part ul li a
 {
     color: #1e1e1e;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.blog-part ul li a:hover
+{
+    color: var(--primary-color);
 }
 .blog-tags
 {
@@ -519,27 +528,16 @@ footer
   #pageloader:before {
     content: "";
     position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
     border: 6px solid #f2f2f2;
     border-top: 6px solid var(--primary-color);
     border-radius: 50%;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
     width: 60px;
     height: 60px;
-    -webkit-animation: animate-pageloader 1s linear infinite;
     animation: animate-pageloader 1s linear infinite;
+    -webkit-animation: animate-pageloader 1s linear infinite;
   }
-  
-  @-webkit-keyframes animate-pageloader {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
   @keyframes animate-pageloader {
     0% {
       transform: rotate(0deg);
@@ -549,4 +547,3 @@ footer
       transform: rotate(360deg);
     }
   }
-  
