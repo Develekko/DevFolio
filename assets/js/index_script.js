@@ -141,3 +141,10 @@ navLinks.forEach((link) => {
   loader.style.display = "none";
  })
 
+
+    /*------------------------------------
+    portfolio lightbox
+-------------------------------------- */
+   const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+  });
